@@ -1,6 +1,7 @@
 <script setup>
 import { ref } from 'vue';
 import {PowerOff} from 'lucide-vue-next'
+import {AiOutlinePoweroff} from 'vue-icons-plus/ai'
   const dropdownUserMenu = ref(false);
 
   const visibleDrodownUserMenu = () => {
@@ -32,7 +33,7 @@ import {PowerOff} from 'lucide-vue-next'
           class="bg-white w-40 shadow-sm p-2 mt-14 absolute top-0 right-0" 
           v-show="dropdownUserMenu">
           <div class="flex items-center gap-2">
-            <PowerOff size="14" class="text-gray-600 text-sm font-medium"/>
+            <AiOutlinePoweroff size="14" class="text-gray-600 text-sm font-medium"/>
             <router-link to="/" class="text-sm font-medium text-gray-600">
             Logout
           </router-link>
